@@ -1,0 +1,26 @@
+{
+  "manifest_version": 2,
+
+  "name": "Peivastha",
+  "description": "Easiest way to get ride of IRI block page redirecting you to randome website.",
+  "version": "1.0.0",
+
+  "icons": {
+    "default_icon": "icons/icon.png",
+    "16": "icons/icon-16.png",
+    "48": "icons/icon-48.png",
+    "128": "icons/icon-128.png"
+  },
+
+  "page_action": {
+    "default_icon": "icons/icon.png",
+    "default_title" : "IRI block detected!"
+  },
+  "background": {"scripts": ["js/main.js"]},
+  "permissions": [
+    "webRequest",
+    "webRequestBlocking",
+    "http://*/*"
+  ]
+
+}
